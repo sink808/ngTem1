@@ -1,0 +1,21 @@
+<div id="navbar">
+    <div class="nav-background"></div>
+    <ul>
+        <li routerLink="/main/home" id="home" class="clickable" style="margin-right: 3px;"
+        [ngClass]="{ 'selected' : selected === 'home' }" (click)="addClass('home')">
+            home
+        </li>
+        <li routerLink="/main/about" id="about" class="clickable" style="margin-right: 3px;"
+        [ngClass]="{ 'selected' : selected === 'about' }" (click)="addClass('about')">
+            about
+        </li>
+        <li routerLink="/main/products" id="products" class="clickable" style="margin-right: 3px;"
+        [ngClass]="{ 'selected' : selected === 'products' }" (click)="addClass('products')">
+            products
+        </li>
+        <li routerLink="/main/contact" id="contact" class="clickable"
+        [ngClass]="{ 'selected' : selected === 'contact' }" (click)="addClass('contact')">
+            contact
+        </li>
+    </ul>
+</div>

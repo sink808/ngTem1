@@ -1,0 +1,9 @@
+<ngb-carousel *ngIf="carouselData">
+    <ng-template *ngFor="let carousel of carouselData" ngbSlide>
+        <img [src]="carousel.img" alt="Random first slide">
+        <div class="carousel-caption">
+            <h3>{{ carousel.title }}</h3>
+            <p style="text-align: left">{{ carousel.content }}</p>
+        </div>
+    </ng-template>
+</ngb-carousel>

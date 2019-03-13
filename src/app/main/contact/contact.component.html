@@ -1,0 +1,25 @@
+<div id="contact" class="mt-2">
+    <div class="col-10 mx-auto">
+        <h2 class="text-center mb-5">Give some comments</h2>
+        <div class="row mb-3">
+            <div class="col-4 offset-2">Name:</div>
+            <div class="col-4"><input class="width-full" type="text" [(ngModel)]="data.name" placeholder="Name" autofocus></div>
+        </div>
+        <div class="row mb-3">
+                <div class="col-4 offset-2">Department:</div>
+                <div class="col-4"><input class="width-full" type="text" [(ngModel)]="data.department" placeholder="Department"></div>
+            </div>
+        <div class="row mb-3">
+            <div class="col-4 offset-2">Email:</div>
+            <div class="col-4"><input class="width-full" type="text" [(ngModel)]="data.email" placeholder="Email"></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-4 offset-2">Comment:</div>
+            <div class="col-4"><textarea class="width-full" rows="4" [(ngModel)]="data.comment" placeholder="Comment"></textarea></div>
+        </div>
+        <div class="col-4 offset-6">
+            <button class="btn btn-primary" type="button" (click)="submit()">submit</button>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,19 @@
+<div id="home">
+    <div class="home-img home-content direction-rtl text-center shadow">
+        <div class="first-content home-text align-center">The Dynamics of an Asteroid</div>
+        <div class="content home-text align-center">Tsago Degi Naleya</div>
+        <div class="content home-text align-center">Luminosite Eternelle</div>
+        <div class="content home-text align-center">La Grondement Du Haine</div>
+        <div class="align-center" style="padding: 10px;"><button class="btn btn-primary">Read More</button></div>
+    </div>
+
+    <div class="my-4" style="display: flex">
+        <div class="card card-margin shadow" *ngFor="let img of images" style="padding: 15px; width: 33%; overflow: hidden;">
+            <img class="card-img-top img-zoom-in clickable" [src]="img" alt="Card image cap">
+            <!-- <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div> -->
+        </div>
+    </div>
+</div>

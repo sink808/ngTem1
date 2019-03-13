@@ -1,0 +1,6 @@
+.product-width {
+  $card_width: 16.666667%;
+  $margin: .5rem;
+  
+  width: calc(#{$card_width} * 5 +  #{$margin} * 10);
+}
